@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Weather App
+//  WeatherApp
 //
-//  Created by Jairo Dave Mejia on 30/09/2019.
+//  Created by Jairo Dave Mejia on 16/09/2019.
 //  Copyright © 2019 ako2cjairo. All rights reserved.
 //
 

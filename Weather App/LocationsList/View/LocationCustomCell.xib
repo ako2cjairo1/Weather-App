@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" rowHeight="120" id="n07-A5-qfa" userLabel="Custom Location Cell" customClass="LocationCustomTableViewCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n07-A5-qfa" id="c2O-D3-id4">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jwh-kY-dbf">
+                        <rect key="frame" x="16" y="8" width="382" height="103.5"/>
+                    </imageView>
+                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2d-ts-a0D">
+                        <rect key="frame" x="16" y="8" width="382" height="103"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="bQc-hD-fpn">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="103"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vg1-Mw-BAQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="103"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="lud-cM-FSl">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <vibrancyEffect>
+                                        <blurEffect style="light"/>
+                                    </vibrancyEffect>
+                                </visualEffectView>
+                            </subviews>
+                        </view>
+                        <blurEffect style="dark"/>
+                    </visualEffectView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3v-4s-HP3">
+                        <rect key="frame" x="121" y="10" width="157" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="8Ek-Jc-MwY"/>
+                            <constraint firstAttribute="width" constant="157" id="mKa-Gx-m5c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VuA-yX-AvD">
+                        <rect key="frame" x="36" y="28.5" width="75" height="62.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6H-pH-iu3">
+                                <rect key="frame" x="8" y="0.0" width="59.5" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wtf-g9-Va4">
+                                <rect key="frame" x="13" y="42" width="49.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="pSM-vV-cbb"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lcc-Zs-TW1">
+                        <rect key="frame" x="286" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="OvF-rs-v54"/>
+                            <constraint firstAttribute="width" constant="100" id="XXm-lx-c54"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Jwh-kY-dbf" firstAttribute="leading" secondItem="c2O-D3-id4" secondAttribute="leading" constant="16" id="0la-yw-JEJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Jwh-kY-dbf" secondAttribute="trailing" constant="16" id="2Hk-NG-0eD"/>
+                    <constraint firstItem="Lcc-Zs-TW1" firstAttribute="centerY" secondItem="c2O-D3-id4" secondAttribute="centerY" id="4vs-w2-2ps"/>
+                    <constraint firstItem="VuA-yX-AvD" firstAttribute="leading" secondItem="c2O-D3-id4" secondAttribute="leadingMargin" constant="16" id="SB3-GG-4HL"/>
+                    <constraint firstItem="H3v-4s-HP3" firstAttribute="centerY" secondItem="c2O-D3-id4" secondAttribute="centerY" id="Wu5-4l-RGK"/>
+                    <constraint firstAttribute="bottom" secondItem="Jwh-kY-dbf" secondAttribute="bottom" constant="8" id="fOB-XE-GOW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Lcc-Zs-TW1" secondAttribute="trailing" constant="8" id="lD3-bo-2Aa"/>
+                    <constraint firstItem="Jwh-kY-dbf" firstAttribute="top" secondItem="c2O-D3-id4" secondAttribute="top" constant="8" id="m0q-3f-e56"/>
+                    <constraint firstItem="VuA-yX-AvD" firstAttribute="centerY" secondItem="c2O-D3-id4" secondAttribute="centerY" id="q4V-Bu-Fa6"/>
+                    <constraint firstItem="H3v-4s-HP3" firstAttribute="centerX" secondItem="c2O-D3-id4" secondAttribute="centerX" constant="-7.5" id="rov-RS-qgx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellBackgroundImage" destination="Jwh-kY-dbf" id="bSN-0E-AKA"/>
+                <outlet property="cellBlurEffect" destination="x2d-ts-a0D" id="9L3-qZ-myy"/>
+                <outlet property="cellDayLabel" destination="wtf-g9-Va4" id="X9a-jW-ZSc"/>
+                <outlet property="cellIconImage" destination="Lcc-Zs-TW1" id="ghB-Eq-OHU"/>
+                <outlet property="cellSummaryLabel" destination="H3v-4s-HP3" id="1XT-1V-Tag"/>
+                <outlet property="cellTemperatureLabel" destination="f6H-pH-iu3" id="bG8-WY-kUx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
